@@ -1,0 +1,71 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+#root {
+	padding: 0 20px;
+}
+.progress-bar {
+	border: solid #ccc 1px;
+	margin-bottom: 12px;
+	position: relative;
+	overflow: hidden; 
+}
+
+.progress-bar.overlimit > DIV.progressing {
+	background: red; 
+}
+.progress-bar > SPAN {
+	padding: 12px;
+	display: block;
+	text-align: center;
+	position: relative;
+	z-index: 2; 
+}
+.progress-bar > DIV.progressing {
+	-webkit-transition: width .5s;
+	/* Safari */
+	transition: width .5s;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background: lightblue;
+	z-index: 1;
+	width: 10%;
+	color: red; 
+}
+
+.buttons {
+	display: inline-block; 
+}
+.buttons > BUTTON {
+	margin-left: 8px; 
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

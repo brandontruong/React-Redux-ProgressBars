@@ -9,7 +9,7 @@ This app was bootstrapped with [`create-react-app` ... with Redux](https://githu
 ## Installation
 
 ```
-yarn
+yarn install
 ```
 
 ## Running
